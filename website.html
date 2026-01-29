@@ -1,0 +1,39 @@
+import { useEffect } from 'react';
+import Navbar from '@/components/layout/Navbar';
+import Footer from '@/components/layout/Footer';
+import HeroSection from '@/components/sections/HeroSection';
+import AboutSection from '@/components/sections/AboutSection';
+import SkillsSection from '@/components/sections/SkillsSection';
+import ProjectsSection from '@/components/sections/ProjectsSection';
+import ResumeSection from '@/components/sections/ResumeSection';
+import ContactSection from '@/components/sections/ContactSection';
+
+const Index = () => {
+  useEffect(() => {
+    // Update document title and meta for SEO
+    document.title = 'Sai Vinay Chandra Sekhar | Cybersecurity Portfolio | SOC Analyst';
+    
+    // Update meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Portfolio of Sai Vinay Chandra Sekhar - Aspiring Cybersecurity Professional specializing in SOC Analyst and Blue Team roles. MS Cybersecurity student at NJIT with hands-on SIEM and incident response experience.');
+    }
+  }, []);
+
+  return (
+    <div className="min-h-screen bg-background">
+      <Navbar />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <ResumeSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default Index;
