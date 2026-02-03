@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,9 +14,9 @@
 <body>
 
   <!-- NAVIGATION -->
-  <nav class="topnav" aria-label="Primary navigation">
-    <div class="container topnav-inner">
-      <a class="brandmark" href="#top">SV</a>
+  <nav class="topnav">
+    <div class="nav-inner">
+      <a href="#top" class="brandmark">SV</a>
 
       <div class="navlinks">
         <a href="#introduction">Introduction</a>
@@ -27,338 +26,83 @@
         <a href="#contact">Contact</a>
       </div>
 
-      <a class="nav-cta" href="#contact">Hire Me</a>
+      <a href="#contact" class="nav-cta">Hire Me</a>
     </div>
   </nav>
 
   <!-- HERO -->
-  <header id="top" class="hero section section--dark">
-    <div class="section-topline"></div>
-    <div class="dots" aria-label="menu"><span></span><span></span><span></span></div>
-
-    <div class="hero-inner container">
-      <div class="hero-left">
-        <h1 class="hero-title">Sai Vinay Chandra Sekhar</h1>
-        <p class="hero-subtitle">Cybersecurity Graduate · SOC / Blue Team</p>
-
-        <div class="hero-link">
-          <div class="icon-circle" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-              <path d="M12 22a10 10 0 1 0-10-10 10 10 0 0 0 10 10Z" stroke="currentColor" stroke-width="1.6"/>
-              <path d="M2 12h20" stroke="currentColor" stroke-width="1.6"/>
-              <path d="M12 2c2.7 2.8 4.2 6.3 4.2 10S14.7 19.2 12 22c-2.7-2.8-4.2-6.3-4.2-10S9.3 4.8 12 2Z" stroke="currentColor" stroke-width="1.6"/>
-            </svg>
-          </div>
-          <a class="muted-link" href="https://saivinay425.github.io/portfolio/">saivinay425.github.io/portfolio</a>
-        </div>
-
-        <div class="hero-link">
-          <div class="icon-circle" aria-hidden="true">GH</div>
-          <a class="muted-link" href="https://github.com/saivinay425">github.com/saivinay425</a>
-        </div>
-
-        <!-- Optional: add LinkedIn when ready -->
-        <!--
-        <div class="hero-link">
-          <div class="icon-circle" aria-hidden="true">in</div>
-          <a class="muted-link" href="https://www.linkedin.com/in/YOUR_LINKEDIN/">LinkedIn</a>
-        </div>
-        -->
+  <header id="top" class="hero">
+    <div class="container hero-inner">
+      <div>
+        <h1>Sai Vinay Chandra Sekhar</h1>
+        <p>Cybersecurity Graduate · SOC / Blue Team</p>
       </div>
-
-      <div class="hero-right">
-        <div class="portrait-ring">
-          <!-- Replace with your own image later: assets/profile.jpg -->
-          <img
-            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
-            alt="Sai Vinay Chandra Sekhar Portrait"
-          />
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-orbs" aria-hidden="true">
-      <span class="orb orb-1"></span>
-      <span class="orb orb-2"></span>
     </div>
   </header>
 
   <!-- INTRODUCTION -->
-  <section id="introduction" class="intro section section--dark">
-    <div class="dots dots--corner" aria-hidden="true"><span></span><span></span><span></span></div>
-
-    <div class="container intro-grid">
-      <div class="intro-photo card-frame">
-        <img
-          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80"
-          alt="Working"
-        />
-      </div>
-
-      <div class="intro-content">
-        <h2 class="section-title">Introduction</h2>
-
-        <div class="text-block">
-          <h3 class="block-title">About me</h3>
-
-          <p class="body-muted">
-            I am a cybersecurity graduate student with a strong interest in Security Operations Center (SOC) and blue team roles.
-            I focus on detecting, analyzing, and responding to security incidents using hands-on, practical environments rather
-            than purely theoretical knowledge.
-          </p>
-
-          <p class="body-muted">
-            I built and maintained a personal SOC homelab using Security Onion, Splunk, and Windows auditing/Sysmon telemetry to
-            simulate realistic attack behavior and investigate alerts through logs and dashboards.
-          </p>
-
-          <p class="body-muted">
-            I am actively strengthening my networking and security fundamentals through labs and certifications and seeking an
-            entry-level SOC / Cybersecurity Analyst opportunity.
-          </p>
-        </div>
-
-        <div class="text-block">
-          <h3 class="block-title">Focus areas</h3>
-          <ul class="bullets body-muted">
-            <li>SIEM monitoring & alert triage</li>
-            <li>Windows event logging (Sysmon / Winlogbeat)</li>
-            <li>Network traffic analysis & basic incident response</li>
-          </ul>
-        </div>
-
-        <div class="thin-divider"></div>
-      </div>
-    </div>
-
-    <div class="orbs-soft" aria-hidden="true">
-      <span class="orb orb-3"></span>
+  <section id="introduction" class="section dark">
+    <div class="container">
+      <h2>Introduction</h2>
+      <p>
+        Cybersecurity graduate student focused on SOC and blue team operations,
+        with hands-on experience in SIEM monitoring, log analysis, and incident investigation.
+      </p>
     </div>
   </section>
 
   <!-- CERTIFICATIONS -->
-  <section id="certifications" class="certs section section--cream">
-    <div class="dots dots--corner dark" aria-hidden="true">
-      <span></span><span></span><span></span>
-    </div>
-
+  <section id="certifications" class="section light">
     <div class="container">
-      <h2 class="section-title">Certifications</h2>
+      <h2>Certifications</h2>
 
-      <div class="cert-grid">
-
-        <!-- CompTIA Security+ -->
-        <div class="cert-card">
-          <div class="cert-header">
-            <div class="cert-logo-wrap">
-              <img src="assets/securityplus.png" alt="CompTIA Security+ Logo" class="cert-logo">
-            </div>
-            <h3 class="cert-title">CompTIA Security+ (SY0-701)</h3>
-          </div>
-
-          <p class="body-muted">
-            Security fundamentals across threats, risk, IAM, network security, and incident response.
-          </p>
-
-          <div class="cert-meta">
-            <span><strong>Achieved:</strong> July 21, 2025</span>
-            <span><strong>Expires:</strong> July 21, 2028</span>
-          </div>
+      <div class="cert-card">
+        <img src="assets/securityplus.png" alt="CompTIA Security+">
+        <div>
+          <h3>CompTIA Security+ (SY0-701)</h3>
+          <p>Achieved: July 21, 2025 · Expires: July 21, 2028</p>
         </div>
+      </div>
 
-        <!-- Cisco CCNA -->
-        <div class="cert-card">
-          <div class="cert-header">
-            <div class="cert-logo-wrap">
-              <img src="assets/ccna.png" alt="Cisco CCNA Logo" class="cert-logo">
-            </div>
-            <h3 class="cert-title">Cisco CCNA (200-301)</h3>
-          </div>
-
-          <p class="body-muted">
-            Networking fundamentals including routing & switching, VLANs, IP services, security basics,
-            and troubleshooting.
-          </p>
-
-          <div class="cert-meta">
-            <span><strong>Status:</strong> Ongoing</span>
-          </div>
+      <div class="cert-card">
+        <img src="assets/ccna.png" alt="Cisco CCNA">
+        <div>
+          <h3>Cisco CCNA (200-301)</h3>
+          <p>Status: Ongoing</p>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="projects section section--dark">
-    <div class="dots dots--corner" aria-hidden="true"><span></span><span></span><span></span></div>
-
+  <section id="projects" class="section dark">
     <div class="container">
-      <h2 class="section-title center">Projects</h2>
-
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="brand">
-            <div class="logo-box">SIEM</div>
-            <div>
-              <div class="brand-name">SOC Homelab · Detection & Investigation</div>
-            </div>
-          </div>
-
-          <div class="project-body">
-            <h3 class="project-title">Security Onion · Winlogbeat · Sysmon</h3>
-            <p class="body-muted">
-              Built a SOC lab that forwards Windows logs to SIEM, validates telemetry visibility, and investigates events
-              like failed logins, privilege changes, and suspicious PowerShell activity.
-            </p>
-          </div>
-
-          <a class="pill" href="https://github.com/saivinay425">View on GitHub</a>
-        </article>
-
-        <article class="project-card">
-          <div class="brand">
-            <div class="logo-box">IR</div>
-            <div>
-              <div class="brand-name">Incident Response Practice</div>
-            </div>
-          </div>
-
-          <div class="project-body">
-            <h3 class="project-title">Alert triage · log analysis</h3>
-            <p class="body-muted">
-              Practiced investigation workflows by correlating Windows events with SIEM dashboards and extracting evidence
-              for user creation, admin group changes, and execution traces.
-            </p>
-          </div>
-
-          <a class="pill" href="https://github.com/saivinay425">Case notes</a>
-        </article>
-
-        <article class="project-card">
-          <div class="brand">
-            <div class="logo-box">NET</div>
-            <div>
-              <div class="brand-name">Networking Labs</div>
-            </div>
-          </div>
-
-          <div class="project-body">
-            <h3 class="project-title">Packet analysis · scanning · hardening</h3>
-            <p class="body-muted">
-              Hands-on practice with routing/switching concepts and security fundamentals aligned with CCNA,
-              including subnetting, troubleshooting, and basic network defense concepts.
-            </p>
-          </div>
-
-          <a class="pill" href="https://github.com/saivinay425">Lab repo</a>
-        </article>
-      </div>
+      <h2>Projects</h2>
+      <ul>
+        <li>SOC Homelab – Security Onion, Sysmon, Winlogbeat</li>
+        <li>Incident Response & Alert Triage Labs</li>
+        <li>Networking Labs aligned with CCNA</li>
+      </ul>
     </div>
   </section>
 
   <!-- EDUCATION -->
-  <section id="education" class="education section section--dark">
-    <div class="dots dots--corner" aria-hidden="true"><span></span><span></span><span></span></div>
-
-    <div class="container edu-grid">
-      <div class="edu-photo card-frame">
-        <img
-          src="https://images.unsplash.com/photo-1520975958225-83bf77db5026?auto=format&fit=crop&w=1200&q=80"
-          alt="Education"
-        />
-      </div>
-
-      <div class="edu-content">
-        <h2 class="section-title">Educational Background</h2>
-
-        <div class="edu-item">
-          <div class="edu-icon" aria-hidden="true">🎓</div>
-          <div>
-            <h3 class="block-title">B.Tech in Computer Science — Vellore Institute of Technology</h3>
-            <p class="small-muted">2020 - 2024</p>
-            <p class="body-muted">
-              Core foundations in Operating Systems, Database Management Systems, Computer Networks, and Cryptography.
-            </p>
-          </div>
-        </div>
-
-        <div class="edu-item">
-          <div class="edu-icon" aria-hidden="true">🎓</div>
-          <div>
-            <h3 class="block-title">M.S. in Cybersecurity — NJIT</h3>
-            <p class="small-muted">2024 - 2026 (Expected)</p>
-            <p class="body-muted">
-              Focus on cybersecurity fundamentals, defensive security, networking, and hands-on security labs.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="orbs-soft" aria-hidden="true">
-      <span class="orb orb-4"></span>
+  <section id="education" class="section dark">
+    <div class="container">
+      <h2>Education</h2>
+      <p><strong>M.S. Cybersecurity</strong> — NJIT (2024–2026)</p>
+      <p><strong>B.Tech Computer Science</strong> — VIT (2020–2024)</p>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="contact section section--cream">
-    <div class="dots dots--corner dark" aria-hidden="true"><span></span><span></span><span></span></div>
-
-    <div class="container contact-grid">
-      <div class="contact-photo">
-        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=80" alt="Work desk left" />
-      </div>
-
-      <div class="contact-card">
-        <h2 class="section-title center">Let's Work Together</h2>
-
-        <div class="contact-items">
-          <div class="citem">
-            <div class="cicon">☎</div>
-            <div>
-              <div class="small-muted">Phone</div>
-              <div class="body">+1-201-275-7454</div>
-            </div>
-          </div>
-
-          <div class="citem">
-            <div class="cicon">✉</div>
-            <div>
-              <div class="small-muted">Email</div>
-              <div class="body">saivinay425@gmail.com</div>
-            </div>
-          </div>
-
-          <div class="citem">
-            <div class="cicon">⌂</div>
-            <div>
-              <div class="small-muted">Location</div>
-              <div class="body">Jersey City, New Jersey, USA</div>
-            </div>
-          </div>
-
-          <div class="citem">
-            <div class="cicon">🌐</div>
-            <div>
-              <div class="small-muted">Website</div>
-              <div class="body">saivinay425.github.io/portfolio</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact-photo">
-        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Work desk right" />
-      </div>
+  <section id="contact" class="section light">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: saivinay425@gmail.com</p>
+      <p>Location: Jersey City, NJ</p>
     </div>
   </section>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span class="small-muted">© 2026 Sai Vinay Chandra Sekhar</span>
-    </div>
-  </footer>
 
 </body>
 </html>
