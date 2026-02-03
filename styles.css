@@ -1,4 +1,4 @@
-```css
+css
 :root{
   --bg-dark: #141414;
   --bg-dark-2: #0f0f0f;
@@ -208,6 +208,8 @@ img{ max-width: 100%; display: block; }
 .hero{
   padding: 86px 0 92px;
 }
+.hero-title{ color: rgba(255,255,255,.92); }
+.hero-subtitle{ color: rgba(255,255,255,.70); }
 .hero-inner{
   display: grid;
   grid-template-columns: 1.1fr .9fr;
