@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +14,25 @@
 </head>
 <body>
 
+  <!-- NAVIGATION -->
+  <nav class="topnav" aria-label="Primary navigation">
+    <div class="container topnav-inner">
+      <a class="brandmark" href="#top">SV</a>
+
+      <div class="navlinks">
+        <a href="#introduction">Introduction</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a class="nav-cta" href="#contact">Hire Me</a>
+    </div>
+  </nav>
+
   <!-- HERO -->
-  <header class="hero section section--dark">
+  <header id="top" class="hero section section--dark">
     <div class="section-topline"></div>
     <div class="dots" aria-label="menu"><span></span><span></span><span></span></div>
 
@@ -38,19 +56,10 @@
           <div class="icon-circle" aria-hidden="true">GH</div>
           <a class="muted-link" href="https://github.com/saivinay425">github.com/saivinay425</a>
         </div>
-
-        <!-- Optional: add LinkedIn when ready -->
-        <!--
-        <div class="hero-link">
-          <div class="icon-circle" aria-hidden="true">in</div>
-          <a class="muted-link" href="https://www.linkedin.com/in/YOUR_LINKEDIN/">LinkedIn</a>
-        </div>
-        -->
       </div>
 
       <div class="hero-right">
         <div class="portrait-ring">
-          <!-- Replace with your own image later: assets/profile.jpg -->
           <img
             src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
             alt="Sai Vinay Chandra Sekhar Portrait"
@@ -66,7 +75,7 @@
   </header>
 
   <!-- INTRODUCTION -->
-  <section class="intro section section--dark">
+  <section id="introduction" class="intro section section--dark">
     <div class="dots dots--corner" aria-hidden="true"><span></span><span></span><span></span></div>
 
     <div class="container intro-grid">
@@ -119,32 +128,53 @@
   </section>
 
   <!-- CERTIFICATIONS -->
-  <section class="certs section section--cream">
+  <section id="certifications" class="certs section section--cream">
     <div class="dots dots--corner dark" aria-hidden="true"><span></span><span></span><span></span></div>
 
     <div class="container">
       <h2 class="section-title">Certifications</h2>
 
       <div class="cert-grid">
+
+        <!-- CompTIA Security+ -->
         <div class="cert-card">
-          <h3 class="cert-title">CompTIA Security+ (SY0-701)</h3>
+          <div class="cert-header">
+            <img src="assets/securityplus.png" alt="CompTIA Security+ Logo" class="cert-logo">
+            <h3 class="cert-title">CompTIA Security+ (SY0-701)</h3>
+          </div>
+
           <p class="body-muted">
             Security fundamentals across threats, risk, IAM, network security, and incident response.
           </p>
+
+          <div class="cert-meta">
+            <span><strong>Achieved:</strong> July 21, 2025</span>
+            <span><strong>Expires:</strong> July 21, 2028</span>
+          </div>
         </div>
 
+        <!-- Cisco CCNA -->
         <div class="cert-card">
-          <h3 class="cert-title">Cisco CCNA (200-301)</h3>
+          <div class="cert-header">
+            <img src="assets/ccna.png" alt="Cisco CCNA Logo" class="cert-logo">
+            <h3 class="cert-title">Cisco CCNA (200-301)</h3>
+          </div>
+
           <p class="body-muted">
             Networking fundamentals: routing & switching, VLANs, IP services, security basics, and troubleshooting.
           </p>
+
+          <div class="cert-meta">
+            <span><strong>Status:</strong> Ongoing</span>
+          </div>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section class="projects section section--dark">
+  <section id="projects" class="projects section section--dark">
     <div class="dots dots--corner" aria-hidden="true"><span></span><span></span><span></span></div>
 
     <div class="container">
@@ -212,7 +242,7 @@
   </section>
 
   <!-- EDUCATION -->
-  <section class="education section section--dark">
+  <section id="education" class="education section section--dark">
     <div class="dots dots--corner" aria-hidden="true"><span></span><span></span><span></span></div>
 
     <div class="container edu-grid">
@@ -256,7 +286,7 @@
   </section>
 
   <!-- CONTACT -->
-  <section class="contact section section--cream">
+  <section id="contact" class="contact section section--cream">
     <div class="dots dots--corner dark" aria-hidden="true"><span></span><span></span><span></span></div>
 
     <div class="container contact-grid">
@@ -316,3 +346,4 @@
 
 </body>
 </html>
+```
